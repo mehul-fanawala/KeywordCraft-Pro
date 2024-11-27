@@ -1,38 +1,128 @@
 # KeywordCraft Pro - SEO Keywords Generator
 
-A powerful and intuitive SEO keyword generator that helps you discover various types of keywords for your content strategy.
+KeywordCraft Pro is a powerful web application designed to generate comprehensive SEO keywords using both template-based patterns and OpenAI's advanced language models.
+
+![KeywordCraft Pro Screenshot](screenshot.png)
 
 ## Features
 
-- Generate multiple types of keywords:
-  - Informational Keywords
-  - Commercial Keywords
-  - Transactional Keywords
-  - Navigational Keywords
-  - Long Tail Keywords
-  - Seed Keywords
-  - Customer-Centric Keywords
-- Modern, responsive UI
-- Export keywords to Excel
-- Real-time keyword generation
-- Word count indicators
-- Smooth animations and transitions
+### 1. Multiple Generation Methods
+- **Template-based Generation**
+  - Quick and free
+  - Uses predefined patterns and industry best practices
+  - No API key required
 
-## How to Use
+- **OpenAI-powered Generation**
+  - Advanced AI-generated keywords
+  - Supports GPT-4 and GPT-3.5 Turbo models
+  - Requires OpenAI API key
 
-1. Open `index.html` in your web browser
-2. Enter your topic in the input field
-3. Click "Generate" or press Enter
-4. View your generated keywords organized by category
-5. Click "Export to Excel" to download your keywords
+### 2. Keyword Categories
+- Informational Keywords (how-to, what-is, etc.)
+- Commercial Keywords (best, top, review, etc.)
+- Transactional Keywords (buy, purchase, etc.)
+- Navigational Keywords
+- Short Tail Keywords
+- Long Tail Keywords
+- Exact Match Keywords
+- Broad Match Keywords
+- Phrase Match Keywords
+- Primary Keywords
+- Secondary Keywords
+- Competitor Keywords
+- Customer-Centric Keywords
 
-## Technologies Used
-
-- HTML5
-- CSS3 with Tailwind CSS
-- Vanilla JavaScript
-- XLSX.js for Excel export
+### 3. User Interface Features
+- Responsive design (up to 5-column layout)
+- Interactive keyword selection
+- Real-time keyword count display
+- Export to Excel functionality
+- Secure API key handling
+- Modern, gradient-based design
+- Intuitive category organization
 
 ## Getting Started
 
-No installation required! Simply open `index.html` in your web browser to start generating keywords.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/keywordcraft-pro.git
+cd keywordcraft-pro
+```
+
+2. Open `index.html` in your web browser
+
+3. Choose your generation method:
+   - **Template-based**: Just enter your topic and generate
+   - **OpenAI**: Enter your OpenAI API key, select model, and generate
+
+## Using OpenAI Integration
+
+1. Get your OpenAI API key from [OpenAI's platform](https://platform.openai.com)
+2. Select "OpenAI Powered" generation method
+3. Enter your API key (it's never stored)
+4. Choose between GPT-4 (most capable) or GPT-3.5 Turbo (faster)
+5. Enter your topic and generate keywords
+
+## Configuration
+
+The `config.js` file contains settings for:
+- Default OpenAI model
+- Available models and descriptions
+- UI theme settings
+- Animation configurations
+
+## Export Options
+
+Export your selected keywords to Excel with categorization preserved. The export includes:
+- All keyword categories
+- Selection status
+- Category grouping
+- Timestamp
+
+## Security
+
+- API keys are never stored
+- Keys are transmitted securely
+- Password-type input for API keys
+- Client-side only (no server storage)
+
+## Browser Support
+
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+- Opera
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- OpenAI for their powerful GPT models
+- XLSX.js for Excel export functionality
+- Tailwind CSS for styling
+
+## Future Enhancements
+
+- [ ] Keyword difficulty analysis
+- [ ] Search volume integration
+- [ ] Competitor keyword analysis
+- [ ] Keyword trends visualization
+- [ ] More export formats (CSV, JSON)
+- [ ] Local storage for settings
+- [ ] Batch processing
+- [ ] Custom category creation
+
+## Support
+
+For support, please open an issue in the GitHub repository or contact the maintainers.
