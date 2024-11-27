@@ -1,0 +1,113 @@
+.keyword-card {
+    transition: transform 0.2s ease-in-out;
+    height: fit-content;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.keyword-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.keyword-card::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.keyword-card::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.keyword-card::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}
+
+.keyword-card:hover {
+    transform: translateY(-2px);
+}
+
+.keyword-item {
+    transition: background-color 0.2s ease-in-out;
+    position: relative;
+    padding-left: 2rem !important;
+}
+
+.keyword-item .checkbox {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #cbd5e0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.keyword-item.selected .checkbox {
+    background-color: #4f46e5;
+    border-color: #4f46e5;
+}
+
+.keyword-item.selected .checkbox:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.keyword-item:hover {
+    background-color: #f3f4f6;
+}
+
+.keyword-item:hover .checkbox {
+    border-color: #4f46e5;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
